@@ -130,4 +130,4 @@ async def on_message(message):
             await message.channel.send('**Error!** Kein Parameter angegeben! Wenn du nicht weiter weißt schau bei **-help** oder wende dich an einen **Admin** oder **Moderator**.')    
 
 
-bot.run('ODM4MzQyMTY1MzYwNjcyNzY4.YI5s-w.51EZrDlpcRpehMqkV2SURK8Ud5I')
+bot.run('')
