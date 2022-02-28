@@ -1,7 +1,10 @@
+import os
 import discord
 import random
+from keep_alive import keep_alive
 
 bot = discord.Client()
+my_secret = os.environ['TOKEN']
 
 
 @bot.event
@@ -52,7 +55,7 @@ async def on_message(message):
         embed.add_field(name='-explosion', value='Sendet ein zufälliges Bild von einer Explosion.', inline=False)
         embed.add_field(name='-socials <parameter>', value='Sendet den jeweiligen Link social Media Link von Frederik. Gültige Parameter sind: **yt** um sich den Link von seinem YouTube Kanal zu schicken, **i** für Instagram und **a** für alle Links. Der jeweilige Befehl muss ohne die Klammern angegeben werden!')
         embed.set_thumbnail(url='https://cdn.discordapp.com/attachments/833098898930139229/838490284241191002/Logoentwurf2neuer.jpg')
-        embed.set_footer(icon_url='https://cdn.discordapp.com/attachments/808418244628840499/839113433727107102/Profilbild.png' ,text='Programmiert von Sören#2416')
+        embed.set_footer(icon_url='https://cdn.discordapp.com/attachments/800792706833973289/913719492465533008/unknown.png' ,text='Programmiert von Sören#2416')
         await message.channel.send(embed=embed)
 
         #await message.channel.send('**Dieser Befehl ist aufgrund von Wartungsarbeiten temporär nicht verfügbar!**')
@@ -140,4 +143,5 @@ async def on_message(message):
         print('dumm')
         await message.add_reaction(str(emoji))
 
-bot.run('')
+keep_alive()
+bot.run(my_secret)
