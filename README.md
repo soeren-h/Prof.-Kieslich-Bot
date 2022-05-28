@@ -31,9 +31,9 @@ Prefix for the Bot is '-'
 -socials *Parameter*:
 	Sends a link to the correesponding social media platform
 	Possible Parameters are (The character case doesn't matter):
-		YouTube, yt, y
-		Instagram, i, insta
-		Patreaon, p
+		**YouTube**, yt, y
+		**Instagram**, i, insta
+		**Patreaon**, p
 
 -help:
 	Sends an onverview of all commands 
